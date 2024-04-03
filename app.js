@@ -13,6 +13,10 @@ app.route('/')
 res.render('hero',{})
 });
 
+app.get('/hashira',(req,res)=>{
+    res.render('hashira-page',{})
+})
+
 app.listen(process.env.PORT || 3000,()=>{
     console.log('Server is up and running.');
 })
